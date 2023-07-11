@@ -1,0 +1,16 @@
+{
+    "name": "TO-DO App",
+    "short_name": "TO-DO",
+    "icons": [
+       {
+          "src": "./src/app/icon.png",
+          "type": "image/PNG",
+          "sizes": "144x144"
+       }
+    ],
+ 
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0264F6",
+    "theme_color": "#fff"
+ }
