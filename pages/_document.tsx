@@ -1,10 +1,12 @@
 import { Html, Head, Main, NextScript } from "next/document";
+
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/icon.png"></link>
+        {/* for iOS devices */}
+        <link rel="apple-touch-icon" href="/apple-touch.png" />
         <meta name="theme-color" content="#fff" />
       </Head>
       <body>

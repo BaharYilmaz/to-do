@@ -6,8 +6,9 @@ const withPWA = require("next-pwa")({
   skipWaiting: true,
 });
 
-const nextConfig = withPWA({
+module.exports = withPWA({
   reactStrictMode: true,
+  images: {
+    domains: ["static.vecteezy.com"],
+  },
 });
-
-module.exports = nextConfig;
