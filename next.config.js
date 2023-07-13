@@ -2,8 +2,9 @@
 
 const withPWA = require("next-pwa")({
   dest: "public",
-  register: true,
-  skipWaiting: true,
+  register: true, //register service worker
+  skipWaiting: true, //installs new sw when available
+  disable: process.env.NODE_ENV === "development",
 });
 
 module.exports = withPWA({
